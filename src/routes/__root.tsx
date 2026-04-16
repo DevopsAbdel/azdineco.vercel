@@ -29,14 +29,16 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Azdine Éco" },
+      { name: "description", content: "Landing page for Azdine Éco's practical accounting courses, designed for maximum conversion in the Moroccan market." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Azdine Éco" },
+      { property: "og:description", content: "Landing page for Azdine Éco's practical accounting courses, designed for maximum conversion in the Moroccan market." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Azdine Éco" },
+      { name: "twitter:description", content: "Landing page for Azdine Éco's practical accounting courses, designed for maximum conversion in the Moroccan market." },
     ],
     links: [
       {
