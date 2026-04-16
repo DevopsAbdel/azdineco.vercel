@@ -123,18 +123,21 @@ function LandingPage() {
         <div className="relative mx-auto max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-gold/30 bg-brand-gold/10 px-4 py-1.5 text-sm text-brand-gold">
             <StarIcon className="h-4 w-4" />
-            Formation 100% Pratique
+            Formation 100% Pratique — تكوين عملي 100%
           </div>
           <h1 className="mb-6 text-3xl font-extrabold leading-tight text-brand-gold md:text-5xl lg:text-6xl">
             Maîtrisez la Comptabilité<br />
             <span className="text-brand-gold-light">et Lancez Votre Carrière</span>
           </h1>
+          <p className="mx-auto mb-2 text-xl font-bold text-brand-gold-light/90 md:text-2xl" dir="rtl" lang="ar">
+            ولّي محاسب محترف مع أزدين إيكو 🎯
+          </p>
           <p className="mx-auto mb-4 max-w-2xl text-lg text-brand-gold-light/80">
             Formez-vous avec le <strong className="text-brand-gold">Prof. Azdine Éco</strong> sur des cas réels du marché marocain.
             Obtenez une attestation de formation et un certificat de réussite.
           </p>
-          <p className="mx-auto mb-8 max-w-xl text-base text-brand-gold-light/60" dir="rtl" lang="ar">
-            تكوين عملي 100% فالمحاسبة 🎯 حالات واقعية من السوق المغربي، شهادة تكوين + شهادة نجاح
+          <p className="mx-auto mb-8 max-w-xl text-lg text-brand-gold-light/70 md:text-xl" dir="rtl" lang="ar">
+            تكوين عملي 100% فالمحاسبة — حالات واقعية من السوق المغربي، شهادة تكوين + شهادة نجاح
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
@@ -144,7 +147,7 @@ function LandingPage() {
               className="inline-flex items-center gap-2 rounded-xl bg-brand-gold px-8 py-4 text-lg font-bold text-brand-dark shadow-lg transition hover:scale-105 hover:bg-brand-gold-dark"
             >
               <WhatsAppIcon className="h-5 w-5" />
-              S'inscrire maintenant
+              S'inscrire maintenant — سجّل دابا
             </a>
             <a
               href={WA_MSG_INFO}
@@ -159,15 +162,15 @@ function LandingPage() {
           <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-brand-gold-light/70">
             <div className="flex items-center gap-2">
               <CheckIcon className="h-5 w-5 text-brand-gold" />
-              Attestation de formation
+              شهادة تكوين — Attestation
             </div>
             <div className="flex items-center gap-2">
               <CheckIcon className="h-5 w-5 text-brand-gold" />
-              Cas réels marocains
+              حالات واقعية — Cas réels
             </div>
             <div className="flex items-center gap-2">
               <CheckIcon className="h-5 w-5 text-brand-gold" />
-              Accompagnement personnalisé
+              متابعة شخصية — Accompagnement
             </div>
           </div>
         </div>
@@ -177,9 +180,12 @@ function LandingPage() {
       <section id="formation" className="bg-background px-4 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-2xl font-bold text-foreground md:text-4xl">
+            <h2 className="mb-2 text-2xl font-bold text-foreground md:text-4xl">
               Pourquoi cette formation est <span className="text-primary">différente</span> ?
             </h2>
+            <p className="mb-2 text-lg font-semibold text-primary/80 md:text-xl" dir="rtl" lang="ar">
+              علاش هاد التكوين مختلف ؟ 🔥
+            </p>
             <p className="mx-auto max-w-2xl text-muted-foreground">
               Vous cherchez une formation en comptabilité qui va au-delà de la théorie ?
               Notre approche est 100% pratique, basée sur des cas réels du marché marocain.
@@ -190,22 +196,26 @@ function LandingPage() {
               {
                 emoji: "📊",
                 title: "Cas Réels",
+                titleAr: "حالات واقعية",
                 desc: "Travaillez sur de vrais dossiers comptables utilisés par les entreprises marocaines.",
               },
               {
                 emoji: "🎯",
                 title: "100% Pratique",
+                titleAr: "عملي 100%",
                 desc: "Pas de théorie inutile. Chaque session est orientée compétences opérationnelles.",
               },
               {
                 emoji: "📈",
                 title: "Marché de l'Emploi",
+                titleAr: "سوق الشغل",
                 desc: "Compétences directement recherchées par les cabinets et entreprises au Maroc.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border bg-card p-8 text-center shadow-sm transition hover:shadow-md">
                 <div className="mb-4 text-4xl">{item.emoji}</div>
-                <h3 className="mb-2 text-lg font-bold text-card-foreground">{item.title}</h3>
+                <h3 className="mb-1 text-lg font-bold text-card-foreground">{item.title}</h3>
+                <p className="mb-2 text-base font-semibold text-primary/70" dir="rtl" lang="ar">{item.titleAr}</p>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
               </div>
             ))}
@@ -217,7 +227,10 @@ function LandingPage() {
       <section className="bg-secondary/50 px-4 py-16 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <img src="/logo-azdine-eco.jpg" alt="Prof. Azdine Éco" className="mx-auto mb-6 h-32 w-auto object-contain" />
-          <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">Prof. Azdine Éco</h2>
+          <h2 className="mb-2 text-2xl font-bold text-foreground md:text-3xl">Prof. Azdine Éco</h2>
+          <p className="mb-4 text-lg font-semibold text-primary/80 md:text-xl" dir="rtl" lang="ar">
+            الأستاذ أزدين إيكو — خبير فالمحاسبة والتسيير 🎓
+          </p>
           <p className="mx-auto mb-6 max-w-xl text-muted-foreground">
             Formateur expérimenté en comptabilité et gestion, spécialisé dans l'enseignement pratique.
             Des milliers d'étudiants formés avec succès, une pédagogie claire et adaptée au contexte marocain.
@@ -243,9 +256,12 @@ function LandingPage() {
       <section id="packs" className="bg-background px-4 py-16 md:py-24">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-2xl font-bold text-foreground md:text-4xl">
+            <h2 className="mb-2 text-2xl font-bold text-foreground md:text-4xl">
               Choisissez Votre <span className="text-primary">Pack</span>
             </h2>
+            <p className="mb-2 text-lg font-semibold text-primary/80 md:text-xl" dir="rtl" lang="ar">
+              ختار الباكاج ديالك 📦
+            </p>
             <p className="text-muted-foreground">Deux formules adaptées à vos objectifs et votre disponibilité.</p>
           </div>
           <div className="grid gap-8 md:grid-cols-2">
@@ -319,9 +335,12 @@ function LandingPage() {
       <section id="certification" className="bg-brand-dark px-4 py-16 text-center md:py-24">
         <div className="mx-auto max-w-4xl">
           <CertificateIcon className="mx-auto mb-6 h-16 w-16 text-brand-gold" />
-          <h2 className="mb-4 text-2xl font-bold text-brand-gold md:text-4xl">
+          <h2 className="mb-2 text-2xl font-bold text-brand-gold md:text-4xl">
             Certification Officielle
           </h2>
+          <p className="mb-4 text-lg font-semibold text-brand-gold/80 md:text-xl" dir="rtl" lang="ar">
+            شهادة تكوين + شهادة نجاح معترف بيها 📜🏆
+          </p>
           <p className="mx-auto mb-8 max-w-xl text-brand-gold-light/80">
             À la fin de votre formation, vous recevez une <strong className="text-brand-gold">Attestation de formation</strong> ainsi qu'un <strong className="text-brand-gold">Certificat de réussite</strong>, valorisables auprès des employeurs.
           </p>
@@ -343,7 +362,7 @@ function LandingPage() {
       {/* ── Section Darija (RTL) ── */}
       <section className="bg-secondary/50 px-4 py-16 md:py-24" dir="rtl" lang="ar">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-6 text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-6 text-3xl font-bold text-foreground md:text-5xl">
             🎓 علاش تختار تكوين أزدين إيكو ؟
           </h2>
           <div className="grid gap-6 text-right sm:grid-cols-2">
@@ -354,10 +373,12 @@ function LandingPage() {
               { icon: "📜", text: "شهادة تكوين + شهادة نجاح" },
               { icon: "💼", text: "كفاءات مطلوبة فسوق الشغل" },
               { icon: "🎯", text: "مناسب للمبتدئين والمحترفين" },
+              { icon: "💰", text: "ثمن مناسب ومعقول" },
+              { icon: "🏢", text: "غادي تخدم فأي شركة أو كابيني" },
             ].map((item) => (
-              <div key={item.text} className="flex items-center gap-3 rounded-xl bg-card p-5 shadow-sm">
-                <span className="text-3xl">{item.icon}</span>
-                <span className="text-lg font-medium text-card-foreground md:text-xl">{item.text}</span>
+              <div key={item.text} className="flex items-center gap-4 rounded-xl bg-card p-6 shadow-sm">
+                <span className="text-4xl">{item.icon}</span>
+                <span className="text-xl font-semibold text-card-foreground md:text-2xl">{item.text}</span>
               </div>
             ))}
           </div>
@@ -365,10 +386,10 @@ function LandingPage() {
             href={WA_MSG_INSCRIPTION}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-xl font-bold text-primary-foreground transition hover:opacity-90"
+            className="mt-10 inline-flex items-center gap-2 rounded-xl bg-primary px-10 py-5 text-xl font-bold text-primary-foreground transition hover:opacity-90 md:text-2xl"
             dir="ltr"
           >
-            <WhatsAppIcon className="h-5 w-5" />
+            <WhatsAppIcon className="h-6 w-6" />
             سجّل دابا — S'inscrire maintenant
           </a>
         </div>
@@ -378,9 +399,12 @@ function LandingPage() {
       <section id="videos" className="bg-background px-4 py-16 md:py-24">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-2xl font-bold text-foreground md:text-4xl">
+            <h2 className="mb-2 text-2xl font-bold text-foreground md:text-4xl">
               Découvrez nos <span className="text-primary">Vidéos</span>
             </h2>
+            <p className="mb-2 text-lg font-semibold text-primary/80 md:text-xl" dir="rtl" lang="ar">
+              شوف الفيديوات ديالنا 🎬
+            </p>
             <p className="text-muted-foreground">Suivez notre chaîne YouTube pour des cours gratuits et des aperçus de la formation.</p>
           </div>
           <div className="mx-auto max-w-4xl">
@@ -401,7 +425,8 @@ function LandingPage() {
       {/* ── Réseaux Sociaux ── */}
       <section className="bg-secondary/50 px-4 py-16 md:py-20">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-8 text-2xl font-bold text-foreground md:text-3xl">Suivez-nous</h2>
+          <h2 className="mb-2 text-2xl font-bold text-foreground md:text-3xl">Suivez-nous</h2>
+          <p className="mb-6 text-lg font-semibold text-primary/80 md:text-xl" dir="rtl" lang="ar">تابعونا فالسوشل ميديا 📲</p>
           <div className="flex flex-wrap justify-center gap-6">
             <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 rounded-2xl bg-card p-6 shadow-sm transition hover:shadow-md">
               <YouTubeIcon className="h-10 w-10 text-destructive" />
@@ -425,14 +450,17 @@ function LandingPage() {
       {/* ── CTA Final ── */}
       <section className="bg-brand-dark px-4 py-20 text-center md:py-28">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-4 text-2xl font-bold text-brand-gold md:text-4xl">
+          <h2 className="mb-2 text-2xl font-bold text-brand-gold md:text-4xl">
             Commencez Votre Carrière<br />en Comptabilité Aujourd'hui
           </h2>
+          <p className="mb-4 text-xl font-bold text-brand-gold/80 md:text-2xl" dir="rtl" lang="ar">
+            بدا مشوارك المهني فالمحاسبة اليوم 🚀
+          </p>
           <p className="mx-auto mb-4 max-w-xl text-brand-gold-light/80">
             Ne laissez pas passer cette opportunité. Inscrivez-vous maintenant et rejoignez des centaines d'étudiants qui ont transformé leur avenir professionnel.
           </p>
-          <p className="mx-auto mb-8 text-brand-gold-light/60" dir="rtl" lang="ar">
-            ما تضيّعش الفرصة — سجّل دابا وبدا مشوارك المهني فالمحاسبة 🚀
+          <p className="mx-auto mb-8 text-lg text-brand-gold-light/70 md:text-xl" dir="rtl" lang="ar">
+            ما تضيّعش الفرصة — سجّل دابا وبدا مشوارك المهني فالمحاسبة
           </p>
           <a
             href={WA_MSG_INSCRIPTION}
