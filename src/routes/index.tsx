@@ -343,7 +343,7 @@ function LandingPage() {
       {/* ── Section Darija (RTL) ── */}
       <section className="bg-secondary/50 px-4 py-16 md:py-24" dir="rtl" lang="ar">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-6 text-2xl font-bold text-foreground md:text-3xl">
+          <h2 className="mb-6 text-3xl font-bold text-foreground md:text-4xl">
             🎓 علاش تختار تكوين أزدين إيكو ؟
           </h2>
           <div className="grid gap-6 text-right sm:grid-cols-2">
@@ -355,9 +355,9 @@ function LandingPage() {
               { icon: "💼", text: "كفاءات مطلوبة فسوق الشغل" },
               { icon: "🎯", text: "مناسب للمبتدئين والمحترفين" },
             ].map((item) => (
-              <div key={item.text} className="flex items-center gap-3 rounded-xl bg-card p-4 shadow-sm">
-                <span className="text-2xl">{item.icon}</span>
-                <span className="text-sm font-medium text-card-foreground">{item.text}</span>
+              <div key={item.text} className="flex items-center gap-3 rounded-xl bg-card p-5 shadow-sm">
+                <span className="text-3xl">{item.icon}</span>
+                <span className="text-lg font-medium text-card-foreground md:text-xl">{item.text}</span>
               </div>
             ))}
           </div>
@@ -365,7 +365,7 @@ function LandingPage() {
             href={WA_MSG_INSCRIPTION}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-lg font-bold text-primary-foreground transition hover:opacity-90"
+            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-xl font-bold text-primary-foreground transition hover:opacity-90"
             dir="ltr"
           >
             <WhatsAppIcon className="h-5 w-5" />
