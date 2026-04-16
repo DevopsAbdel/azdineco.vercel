@@ -383,8 +383,8 @@ function LandingPage() {
             </h2>
             <p className="text-muted-foreground">Suivez notre chaîne YouTube pour des cours gratuits et des aperçus de la formation.</p>
           </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="aspect-video overflow-hidden rounded-2xl shadow-lg">
+          <div className="mx-auto max-w-4xl">
+            <div className="aspect-video overflow-hidden rounded-2xl shadow-xl">
               <iframe
                 className="h-full w-full"
                 src="https://www.youtube.com/embed/GKyJHYWKZks"
@@ -393,22 +393,6 @@ function LandingPage() {
                 allowFullScreen
                 loading="lazy"
               />
-            </div>
-            <div className="flex flex-col items-center justify-center rounded-2xl border bg-card p-8 text-center shadow-sm">
-              <YouTubeIcon className="mb-4 h-12 w-12 text-destructive" />
-              <h3 className="mb-2 text-lg font-bold text-card-foreground">Chaîne YouTube Azdine Éco</h3>
-              <p className="mb-6 text-sm text-muted-foreground">
-                Des dizaines de vidéos gratuites pour vous initier à la comptabilité pratique.
-              </p>
-              <a
-                href={YOUTUBE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-destructive px-6 py-3 font-bold text-destructive-foreground transition hover:opacity-90"
-              >
-                <YouTubeIcon className="h-4 w-4" />
-                Visiter la chaîne
-              </a>
             </div>
           </div>
         </div>
